@@ -1,4 +1,14 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
 .main-container{
 	width:600px;
 	height:250px;
@@ -6,11 +16,16 @@
 	border-radius:10px;
 }
 
-#verification_heading{
+h1#verification_heading {
 	text-align:center;
+    font-size: 24px;
+    color: #333;
 }
 
-#verification_subtext{
+p#verification_subtext {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
 	text-align:center;
 }
 
@@ -22,4 +37,8 @@ input.code{
 	border:1px solid grey;
 	border-radius:10px;
 	align-items:center;
+}
+
+input.code:focus {
+    border-color: #007bff;
 }
